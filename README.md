@@ -1,4 +1,4 @@
-Login con registro de usario y consumo de API www.thecocktaildb.com/api.php
+Login con registro de usuario y consumo de API www.thecocktaildb.com/api.php
 Realizado con .NET CORE 6, SQLite y Angular 10
 
 - Backend -

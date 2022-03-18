@@ -1,0 +1,24 @@
+﻿<h1>Cocktail</h1>
+<input type="text" id="id" />
+&nbsp;
+<button (click)="search()" class="btn btn-sm btn-success mb-2">Buscar</button>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="width: 30%">Nombre</th>
+            <th style="width: 30%">Tipo de bebida</th>
+            <th style="width: 30%">Donde se sirve</th>
+            <th style="width: 10%"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cocktail of cocktails">
+            <td>{{cocktail.strDrink}}</td>
+            <td>{{cocktail.strAlcoholic}}</td>
+            <td>{{cocktail.strGlass}}</td>
+            <td style="white-space: nowrap">
+                <a routerLink="edit/{{cocktail.idDrink}}" class="btn btn-sm btn-primary mr-1">Ver Detalle</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
